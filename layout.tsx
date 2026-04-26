@@ -1,10 +1,3 @@
-import './globals.css'
-
-export const metadata = {
-  title: 'Kurd Agency',
-  description: 'کورد ئەجێنسی بۆ سپۆنسەرکردن',
-}
-
 export default function RootLayout({
   children,
 }: {
@@ -12,7 +5,12 @@ export default function RootLayout({
 }) {
   return (
     <html lang="ku" dir="rtl">
-      <body>{children}</body>
+      <head>
+        <title>Kurd Agency</title>
+      </head>
+      <body>
+        {children}
+      </body>
     </html>
   )
 }
